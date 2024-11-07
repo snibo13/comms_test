@@ -30,6 +30,7 @@ typedef struct comms_state_t{
 void initComms(BLDCMotor* motor, bool debug);
 void initialise_i2c(BLDCMotor* motor);
 void recv_message(int numBytes);
+void req_message();
 void send_message(byte *packet);
 
 void comm_stop_callback();
